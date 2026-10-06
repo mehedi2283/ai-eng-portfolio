@@ -57,3 +57,9 @@ def test_one_bad_reply_does_not_kill_the_batch():
     assert isinstance(results[0], TriageResult)
     assert isinstance(results[1], TriageError)
     assert isinstance(results[2], TriageResult)
+
+
+def test_refusal_raises_triage_error():
+    client = FakeClient([{"refusal": "I can't help with that."}])
+    with pytest.raises(TriageError):
+        asyncio.run(triage_email(client, "fake-model", EMAIL))
