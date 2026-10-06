@@ -1,0 +1,7 @@
+[
+  {"sender": "john@acme.com", "subject": "Quote for 50 units", "body": "Hi, we need a quote for 50 units by Friday. Can you send pricing?"},
+  {"sender": "sarah@gmail.com", "subject": "Can't log in", "body": "I reset my password twice and still can't log in. Please help."},
+  {"sender": "promo@deals.biz", "subject": "WIN A FREE IPHONE", "body": "Click here now to claim your prize!!!"},
+  {"sender": "mike@startup.io", "subject": "Partnership idea", "body": "We'd love to explore integrating with your platform. Free for a call next week?"},
+  {"sender": "billing@vendor.com", "subject": "Invoice #4421", "body": "Your invoice is attached. Due in 30 days."}
+]
