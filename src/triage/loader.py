@@ -7,4 +7,4 @@ from triage.models import Email
 def load_emails(path: str) -> list[Email]:
     text = Path(path).read_text()
     data = json.loads(text)
-    return [Email(**item) for item in data]
+    return [Email.model_validate(item) for item in data]
